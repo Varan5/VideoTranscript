@@ -20,3 +20,27 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.load-btn-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+
+.load-btn {
+    background: linear-gradient(90deg, #4f8cff 0%, #38c6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(79, 140, 255, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+    .load-btn:hover {
+        background: linear-gradient(90deg, #38c6ff 0%, #4f8cff 100%);
+        transform: scale(1.05);
+    }
