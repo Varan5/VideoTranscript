@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 public class FileUploadController : ControllerBase
 {
     [HttpPost("upload")]
+    [RequestSizeLimit(long.MaxValue)]
     public async Task<IActionResult> Upload(IFormFile file)
     {
         if (file == null || file.Length == 0)
